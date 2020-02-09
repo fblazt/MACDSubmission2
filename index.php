@@ -8,7 +8,7 @@
     use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
     use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-    $connectionString = "AccountName=macdstorage;AccountKey=u6bmfai3WQKPRxDfHR4iL0c1g8CZlNDywVahvdR5tqIBFHhCizCgwSviVXIj+mabLkPL/WndWLA7jvlwRWEMXQ==";
+    $connectionString = "DefaultEndpointsProtocol=https;AccountName=macdstorage;AccountKey=u6bmfai3WQKPRxDfHR4iL0c1g8CZlNDywVahvdR5tqIBFHhCizCgwSviVXIj+mabLkPL/WndWLA7jvlwRWEMXQ==;EndpointSuffix=core.windows.net";
     
     $blobClient = BlobRestProxy::createBlobService($connectionString);
 
