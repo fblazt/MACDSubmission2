@@ -89,7 +89,7 @@
             .done(function(data) {
                 // Show formatted JSON on webpage.
                 $("#responseTextArea").val(JSON.stringify(data, null, 2));
-                console.log(sourceImageUrl);
+                $("#description").text(data.description.captions[0].text);
             })
     
             .fail(function(jqXHR, textStatus, errorThrown) {
